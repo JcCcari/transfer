@@ -29,6 +29,7 @@ public class TransferService {
 			Transfer transfer = new Transfer();
 			transfer.setOrigen(source);
 			transfer.setDestino(target);
+			transfer.setNumeroOperacion(System.currentTimeMillis());
 			transfer.setMonto(monto);
 			transfer.setFecha(new Date());
 			repository.save(source);
